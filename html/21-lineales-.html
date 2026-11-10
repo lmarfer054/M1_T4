@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="es" id="exe-page-muqpno4t-nbqin1f7k">
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="eXeLearning v4.0.5">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="license" type="text/html" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+<title>2.1. Lineales | Álgebra</title>
+<link rel="icon" type="image/x-icon" href="../libs/favicon.ico">
+<meta name="description" content="Curso 1º - Enseñanza Bachillerato
+Nombre asignatura/materia: Matemáticas I">
+<script>document.querySelector("html").classList.add("js");</script><script src="../libs/jquery/jquery.min.js"> </script><script src="../libs/common_i18n.js"> </script><script src="../libs/common.js"> </script><script src="../libs/exe_export.js"> </script><script src="../libs/bootstrap/bootstrap.bundle.min.js"> </script><link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
+<script src="../idevices/text/text.js"></script><link rel="stylesheet" href="../idevices/text/text.css">
+<script src="../idevices/form/form.js"></script><link rel="stylesheet" href="../idevices/form/form.css">
+<script src="../idevices/trueorfalse/trueorfalse.js"></script><link rel="stylesheet" href="../idevices/trueorfalse/trueorfalse.css">
+<script src="../idevices/casestudy/casestudy.js"></script><link rel="stylesheet" href="../idevices/casestudy/casestudy.css">
+<script src="../idevices/geogebra-activity/geogebra-activity.js"></script><link rel="stylesheet" href="../idevices/geogebra-activity/geogebra-activity.css">
+<link rel="stylesheet" href="../content/css/base.css"><script src="../theme/style.js"> </script><script src="../theme/z-custom-effects.js"> </script><link rel="stylesheet" href="../theme/colores.css"><link rel="stylesheet" href="../theme/comic.css"><link rel="stylesheet" href="../theme/ejercicio.css"><link rel="stylesheet" href="../theme/libreta.css"><link rel="stylesheet" href="../theme/navegacion.css"><link rel="stylesheet" href="../theme/nota-azul.css"><link rel="stylesheet" href="../theme/retroalimentacion.css"><link rel="stylesheet" href="../theme/style.css">
+<script src="../libs/exe_math/tex-mml-svg.js"> </script>
+</head>
+<body class="exe-export exe-web-site">
+<script>document.body.className+=" js"</script>
+<div class="exe-content exe-export pre-js siteNav-hidden"><a href="#page-muqpno4t-nbqin1f7k" id="skipNav">Skip to content</a> <nav id="siteNav">
+<ul>
+<li> <a href="../index.html" class="main-node no-ch">Álgebra: Inecuaciones</a>
+</li>
+<li> <a href="../html/1-introduccion-a-las-inecuaciones.html" class="daddy">1. Introducción a las inecuaciones</a>
+<ul class="other-section">
+<li> <a href="../html/11-desigualdades-y-propiedades.html" class="no-ch">1.1. Desigualdades y propiedades</a>
+</li>
+</ul>
+</li>
+<li class="current-page-parent"> <a href="../html/2-inecuaciones-con-una-incognita.html" class="daddy">2. Inecuaciones con una incógnita</a>
+<ul class="other-section">
+<li class="active"> <a href="../html/21-lineales-.html" class="active no-ch">2.1. Lineales </a>
+</li>
+<li> <a href="../html/22-cuadraticas-o-de-segundo-grado.html" class="no-ch">2.2. Cuadráticas o de segundo grado</a>
+</li>
+<li> <a href="../html/23-sistemas-de-inecuaciones-lineales-con-una-incog.html" class="no-ch">2.3. Sistemas de inecuaciones lineales con una incógnita</a>
+</li>
+<li> <a href="../html/24-racionales.html" class="no-ch">2.4. Racionales</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav><main id="page-muqpno4t-nbqin1f7k" class="page"> 
+<header class="main-header">
+<div class="package-header"><p class="package-title">Álgebra</p>
+<p class="package-subtitle">Inecuaciones</p></div>
+<div class="page-header"><h1 class="page-title">2.1. Lineales </h1></div>
+</header><div id="page-content-page-muqpno4t-nbqin1f7k" class="page-content">
+<article id="block-muqpno4w-9ojiuzso8" class="box no-header sin-titulo">
+<header class="box-head no-icon">
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-muqpno4w-t7g3gj0dc" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-muqpno4w-t7g3gj0dc&quot;}">
+<div class="exe-text-template">
+    <div align="left" style="text-align: justify;">Las dos expresiones del apartado anterior se denominan inecuaciones o desigualdades.</div>
+<div align="left"><br /></div>
+<div align="left" style="text-align: justify;">Lo primero que llama la atención de las inecuaciones es que tienen infinitas soluciones. Esa es una característica esencial de las inecuaciones.</div>
+<div style="text-align: center;" align="left"><img src="../content/resources/railway-2439189_640.jpg" alt="rieles" title="rieles" width="35%" style="margin-top: 15px; margin-bottom: 15px;" /></div>
+<div align="left"><br /></div>
+<div align="left" style="text-align: justify;">Trabajaremos exclusivamente con inecuaciones de una incógnita.</div>
+</div>
+</div>
+</div>
+</article><article id="block-muqpno4w-hf3g27sxl" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_definicion.png" alt="" style="display:block;object-fit:contain;">
+</div>
+<h1 class="box-title">Inecuación lineal con una incógnita.</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-muqpno4w-0vsjorads" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-muqpno4w-0vsjorads&quot;}">
+<div class="exe-text-template">
+    <table border="0" cellpadding="10" style="width: 100%; background-color: #d4fada;">
+<tbody>
+<tr>
+<td style="width: 99.918%;"><span style="text-align: justify;">Una<span style="color: #007932;"> </span></span><span style="font-weight: bolder; text-align: justify; color: #007932;">inecuación</span><span style="text-align: justify;"> es una desigualdad \(\left(&lt;, \ \leq, \ &gt;, \ \geq\right) \) entre dos expresiones algebraicas (es decir, entre dos expresiones en las que, mediante operaciones aritméticas, se combinan incógnitas y números).</span></td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;"><em>Recordemos que las operaciones aritméticas son las siguientes: suma, resta, producto, división y potenciación.</em></p>
+<p style="text-align: justify;">Una inecuación respeta todas las propiedades vistas para las desigualdades numéricas que, recordemos, son:</p>
+<ul>
+<li style="text-align: justify;">
+<p>No cambia de sentido si se suman o restan números a ambos miembros, ya sean positivos o negativos.</p>
+</li>
+<li style="text-align: justify;">
+<p>Tampoco cambia de sentido si se multiplican o dividen ambos miembros por un número positivo.</p>
+</li>
+<li style="text-align: justify;">
+<p>Cambia de sentido si se multiplican o dividen ambos miembros por un número negativo.</p>
+</li>
+</ul>
+<table border="0" cellpadding="10" style="width: 100%; background-color: #c2e0f4;">
+<tbody>
+<tr>
+<td style="width: 99.918%;"><span style="text-align: justify;">Una </span><span style="font-weight: bolder; text-align: justify;"><span style="color: #000dff;">inecuación lineal (o de primer grado) con una incógnita</span> </span><span style="text-align: justify;">es una inecuación con una sola incógnita (que no aparece en el denominador) y cuyo exponente es necesariamente 1.</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</article><article id="block-muqpno4w-meu0xgn2v" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_definicion.png" alt="" style="display:block;object-fit:contain;">
+</div>
+<h1 class="box-title">Solución de una inecuación.</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-muqpno4w-j3qc1nqgn" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-muqpno4w-j3qc1nqgn&quot;}">
+<div class="exe-text-template">
+    <table border="0" cellpadding="10" style="width: 100%; background-color: #d4fada;">
+<tbody>
+<tr>
+<td style="width: 99.9169%;">Llamaremos <span style="font-weight: bolder;"><span style="color: #007932;">soluciones</span> </span>de una inecuación a todos los números reales que la verifican cuando los sustituimos en la incógnita.</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<p>Por ejemplo, si estudiamos \(2x - 5 &lt; 7\): </p>
+<ul>
+<li>
+<p>el número \(3\) verifica la inecuación ya que \(2·3 - 5 = 1\) que es menor que \(7\)</p>
+</li>
+<li>
+<p>el número \(2\) también la verifica ya que \(2·2 - 5 = -1\) que también es menor que \(7\)</p>
+</li>
+<li>
+<p>también la verifican \(1\), \(0\) y \(-7\), entre otros ...</p>
+</li>
+</ul>
+<table border="0" cellpadding="10" style="width: 100%; background-color: #c2e0f4; height: 33px;">
+<tbody>
+<tr style="height: 33px;">
+<td style="width: 99.9169%; height: 33px;">Efectivamente, la solución de una inecuación es, generalmente, un <span style="color: #000dff;"><strong>conjunto de</strong><strong> infinitos números</strong></span> reales.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</article><article id="block-muqpno4w-25enty9qx" class="box caja-morada boton-morado">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_formulario.png" alt="" style="display:block;object-fit:contain;">
+</div>
+<h1 class="box-title">Ejercicio</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-muqpno4w-frtxm5nlg" class="idevice_node form" data-idevice-path="../idevices/form/" data-idevice-type="form" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-muqpno4w-frtxm5nlg&quot;,&quot;evaluation&quot;:false,&quot;evaluationID&quot;:&quot;&quot;,&quot;repeatActivity&quot;:true,&quot;isScorm&quot;:0,&quot;textButtonScorm&quot;:&quot;Guardar la puntuación&quot;,&quot;weighted&quot;:100,&quot;msgs&quot;:{&quot;msgScoreScorm&quot;:&quot;La puntuación no se puede guardar porque esta página no forma parte  de un paquete SCORM.&quot;,&quot;msgYouScore&quot;:&quot;Tu puntuación es&quot;,&quot;msgEndGameScore&quot;:&quot;Comience la partida antes de guardar la puntuación.&quot;,&quot;msgScore&quot;:&quot;Puntuación&quot;,&quot;msgWeight&quot;:&quot;Peso&quot;,&quot;msgYouLastScore&quot;:&quot;La última puntuación guardada es&quot;,&quot;msgOnlySaveScore&quot;:&quot;¡Solo puede guardar la puntuación una vez!&quot;,&quot;msgOnlySave&quot;:&quot;Solo puede guardar una vez&quot;,&quot;msgOnlySaveAuto&quot;:&quot;Su puntuación se guardará después de cada pregunta. Solo puede jugar una vez.&quot;,&quot;msgSaveAuto&quot;:&quot;Su puntuación se guardará automáticamente después de cada pregunta.&quot;,&quot;msgSeveralScore&quot;:&quot;Puede guardar la puntuación tantas veces como quiera&quot;,&quot;msgPlaySeveralTimes&quot;:&quot;Puede realizar esta actividad cuantas veces quiera&quot;,&quot;msgActityComply&quot;:&quot;Ya ha realizado esta actividad.&quot;,&quot;msgUncompletedActivity&quot;:&quot;Actividad no completada&quot;,&quot;msgSuccessfulActivity&quot;:&quot;Actividad superada. Puntuación: %s&quot;,&quot;msgUnsuccessfulActivity&quot;:&quot;Actividad no superada. Puntuación: %s&quot;,&quot;msgTypeGame&quot;:&quot;Formulario&quot;,&quot;msgStartGame&quot;:&quot;Pulsa aquí para empezar&quot;,&quot;msgTime&quot;:&quot;Tiempo por pregunta&quot;,&quot;msgSaveScore&quot;:&quot;Guardar la puntuación&quot;,&quot;msgResult&quot;:&quot;Resultado&quot;,&quot;msgCheck&quot;:&quot;Comprobar&quot;,&quot;msgReset&quot;:&quot;Reiniciar&quot;,&quot;msgShowAnswers&quot;:&quot;Mostrar respuestas&quot;,&quot;msgTestResultPass&quot;:&quot;¡Felicidades! Has pasado la prueba&quot;,&quot;msgTestResultNotPass&quot;:&quot;Lo siento. Has fallado la prueba&quot;,&quot;msgTrueFalseHelp&quot;:&quot;Di si la afirmación es verdadera o falsa&quot;,&quot;msgDropdownHelp&quot;:&quot;Elige la respuesta correcta entre las opciones propuestas&quot;,&quot;msgFillHelp&quot;:&quot;Rellena los espacios en blanco con la palabra apropiada&quot;,&quot;msgSingleSelectionHelp&quot;:&quot;Opción múltiple con solo una respuesta correcta&quot;,&quot;msgMultipleSelectionHelp&quot;:&quot;Opción múltiple con varias respuestas correctas&quot;,&quot;msgPlayStart&quot;:&quot;Pulsa aquí para empezar&quot;,&quot;msgTrue&quot;:&quot;Verdadero&quot;,&quot;msgFalse&quot;:&quot;Falso&quot;,&quot;msgNext&quot;:&quot;Siguiente&quot;,&quot;msgPrevious&quot;:&quot;Anterior&quot;,&quot;msgSuggestion&quot;:&quot;Sugerencia&quot;,&quot;msgOk&quot;:&quot;Correcto&quot;,&quot;msgKO&quot;:&quot;Incorrecto&quot;,&quot;msgHide&quot;:&quot;Ocultar&quot;},&quot;id&quot;:&quot;idevice-muqpno4w-frtxm5nlg&quot;,&quot;questionsRandom&quot;:false,&quot;percentageQuestions&quot;:&quot;100&quot;,&quot;time&quot;:&quot;0&quot;,&quot;eXeFormInstructions&quot;:&quot;&quot;,&quot;questionsData&quot;:[{&quot;id&quot;:&quot;1790961130261-MHTXL&quot;,&quot;activityType&quot;:&quot;selection&quot;,&quot;baseText&quot;:&quot;&lt;p style=\&quot;text-align: justify;\&quot;&gt;Tenemos la siguiente inecuación: \\[1-\\dfrac{x-5}{2} \\geq 3x\\]&lt;/p&gt;\n&lt;p style=\&quot;text-align: justify;\&quot;&gt;¿Cuáles de los siguientes valores son soluciones de la misma?&lt;/p&gt;&quot;,&quot;feedbackRight&quot;:&quot;&quot;,&quot;feedbackWrong&quot;:&quot;&quot;,&quot;suggestion&quot;:&quot;&quot;,&quot;wrongAnswersValue&quot;:&quot;&quot;,&quot;selectionType&quot;:&quot;multiple&quot;,&quot;answers&quot;:[{&quot;0&quot;:true,&quot;1&quot;:&quot;\\(x = 0\\)&quot;},{&quot;0&quot;:false,&quot;1&quot;:&quot;\\(x = 3\\)&quot;},{&quot;0&quot;:true,&quot;1&quot;:&quot;\\(x = -2\\)&quot;},{&quot;0&quot;:true,&quot;1&quot;:&quot;\\(x = 1/2\\)&quot;}],&quot;answer&quot;:&quot;1&quot;,&quot;capitalization&quot;:false,&quot;strict&quot;:false,&quot;order&quot;:0,&quot;customScore&quot;:1,&quot;time&quot;:0}],&quot;passRate&quot;:5,&quot;addBtnAnswers&quot;:true,&quot;eXeIdeviceTextAfter&quot;:&quot;&quot;,&quot;showSlider&quot;:false}" data-idevice-template="form.html">
+<div class="exe-form-container">
+  <div class="game-evaluation-ids js-hidden" data-id="idevice-muqpno4w-frtxm5nlg" data-evaluationb="false" data-evaluationid=""></div>
+            <div id="frmMainContainer-idevice-muqpno4w-frtxm5nlg" class="form-IDevice" data-id="idevice-muqpno4w-frtxm5nlg">
+                <div class="form-Data js-hidden">{}</div>
+                
+                <div class="FRMP-GameScoreBoard" style="display:none;">
+                    <div>
+                        <strong><span class="sr-av">Tiempo por pregunta:</span></strong>
+                        <span id="frmPTime-idevice-muqpno4w-frtxm5nlg">00:00</span>
+                    </div>
+                </div>
+                <div class="FRMP-StartGame" id="frmStartGameDiv-idevice-muqpno4w-frtxm5nlg" style="display:none;">
+                      <button  id="frmStartGame-idevice-muqpno4w-frtxm5nlg" type="button" class="btn btn-primary">Pulsa aquí para empezar</button>
+                </div>
+                <div class="form-body" id="frmBody-idevice-muqpno4w-frtxm5nlg" style="display:block;">
+                    <div class="FRMP-Questions">
+                        <div id="form-questions-idevice-muqpno4w-frtxm5nlg" > </div>
+                        <div id="frmCover-idevice-muqpno4w-frtxm5nlg" class="FRMP-Cover"> </div>
+                    </div>
+                    <div id="resultsContainer-idevice-muqpno4w-frtxm5nlg" class="form-results-container inline">
+                        <div id="form-score-idevice-muqpno4w-frtxm5nlg" class="score-text">Puntuación.</div>
+                        <div id="form-result-test-idevice-muqpno4w-frtxm5nlg" class="score-text phrase-score"></div>
+                    </div>
+                    <div class="form-buttons-container inline">
+                        <input id="form-button-check-idevice-muqpno4w-frtxm5nlg" class="btn btn-primary" type="button" value="Comprobar"
+                            data-id="idevice-muqpno4w-frtxm5nlg" data-pass-rate="" />
+                        <input id="form-button-reset-idevice-muqpno4w-frtxm5nlg" type="button" value="Reiniciar"
+                            data-id="idevice-muqpno4w-frtxm5nlg" class="btn btn-primary"  style="display:none" />
+                        <input id="form-button-show-answers-idevice-muqpno4w-frtxm5nlg" class="btn btn-primary" type="button" value="Mostrar respuestas"
+                            data-id="idevice-muqpno4w-frtxm5nlg" style="display: " />
+
+                    </div>
+                </div>
+                <div class="Games-BottonContainer d-flex align-items-center justify-content-end mx-auto p-0 w-100"></div>
+                
+            </div>
+            <div class="questionsMedia" style="display:none"></div>
+            
+</div>
+</div>
+</div>
+</article><article id="block-muqpno4w-u1uzwf4r7" class="box caja-morada boton-morado">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_v_o_f.png" alt="" style="display:block;object-fit:contain;">
+</div>
+<h1 class="box-title">Verdadero o falso</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-muqpno4w-eah2nzd5u" class="idevice_node trueorfalse" data-idevice-path="../idevices/trueorfalse/" data-idevice-type="trueorfalse" data-idevice-component-type="json" data-idevice-json-data="{&quot;id&quot;:&quot;idevice-muqpno4w-eah2nzd5u&quot;,&quot;typeGame&quot;:&quot;TrueOrFalse&quot;,&quot;eXeGameInstructions&quot;:&quot;&quot;,&quot;eXeIdeviceTextAfter&quot;:&quot;&quot;,&quot;msgs&quot;:{&quot;msgStartGame&quot;:&quot;Pulsa aquí para empezar&quot;,&quot;msgTime&quot;:&quot;Tiempo por pregunta&quot;,&quot;msgNoImage&quot;:&quot;Pregunta sin imágenes&quot;,&quot;msgScoreScorm&quot;:&quot;La puntuación no se puede guardar porque esta página no forma parte  de un paquete SCORM.&quot;,&quot;msgEndGameScore&quot;:&quot;Comience la partida antes de guardar la puntuación.&quot;,&quot;msgOnlySaveScore&quot;:&quot;¡Solo puede guardar la puntuación una vez!&quot;,&quot;msgOnlySave&quot;:&quot;Solo puede guardar una vez&quot;,&quot;msgYouScore&quot;:&quot;Su puntuación&quot;,&quot;msgAuthor&quot;:&quot;Autoría&quot;,&quot;msgOnlySaveAuto&quot;:&quot;Su puntuación se guardará después de cada pregunta. Solo puede jugar una vez.&quot;,&quot;msgSaveAuto&quot;:&quot;Su puntuación se guardará automáticamente después de cada pregunta.&quot;,&quot;msgSeveralScore&quot;:&quot;Puede guardar la puntuación tantas veces como quiera&quot;,&quot;msgYouLastScore&quot;:&quot;La última puntuación guardada es&quot;,&quot;msgActityComply&quot;:&quot;Ya ha realizado esta actividad.&quot;,&quot;msgPlaySeveralTimes&quot;:&quot;Puede realizar esta actividad cuantas veces quiera&quot;,&quot;msgUncompletedActivity&quot;:&quot;Actividad no completada&quot;,&quot;msgSuccessfulActivity&quot;:&quot;Actividad superada. Puntuación: %s&quot;,&quot;msgUnsuccessfulActivity&quot;:&quot;Actividad no superada. Puntuación: %s&quot;,&quot;msgTypeGame&quot;:&quot;Verdadero o falso&quot;,&quot;msgFeedback&quot;:&quot;Retroalimentación&quot;,&quot;msgSuggestion&quot;:&quot;Sugerencia&quot;,&quot;msgSolution&quot;:&quot;Solución&quot;,&quot;msgQuestion&quot;:&quot;Pregunta&quot;,&quot;msgTrue&quot;:&quot;Verdadero&quot;,&quot;msgFalse&quot;:&quot;Falso&quot;,&quot;msgOk&quot;:&quot;Correcto&quot;,&quot;msgKO&quot;:&quot;Incorrecto&quot;,&quot;msgShow&quot;:&quot;Mostrar&quot;,&quot;msgHide&quot;:&quot;Ocultar&quot;,&quot;msgCheck&quot;:&quot;Comprobar&quot;,&quot;msgReboot&quot;:&quot;¡Prueba otra vez!&quot;,&quot;msgScore&quot;:&quot;Puntuación&quot;,&quot;msgWeight&quot;:&quot;Peso&quot;,&quot;msgNext&quot;:&quot;Siguiente&quot;,&quot;msgPrevious&quot;:&quot;Anterior&quot;,&quot;textButtonScorm&quot;:&quot;Guardar la puntuación&quot;},&quot;questionsRandom&quot;:false,&quot;percentageQuestions&quot;:100,&quot;isTest&quot;:false,&quot;time&quot;:0,&quot;attemptsNumber&quot;:1,&quot;questionsGame&quot;:[{&quot;question&quot;:&quot;&lt;p&gt;Si \\(x \\leq -2\\), entonces \\(x-5 \\geq -7\\)&lt;/p&gt;&quot;,&quot;feedback&quot;:&quot;&lt;p&gt;Sabemos que, si sumamos un número a ambos lados, la desigualdad no varía.&lt;/p&gt;&quot;,&quot;suggestion&quot;:&quot;&quot;,&quot;solution&quot;:0},{&quot;question&quot;:&quot;&lt;p&gt;Si \\(x &amp;gt;3\\), entonces \\(-5x &amp;lt;-15\\)&lt;/p&gt;&quot;,&quot;feedback&quot;:&quot;&lt;p style=\&quot;text-align: justify;\&quot;&gt;Si multiplicamos ambos lados de la desigualdad por un número menor que cero, cambia el sentido de la desigualdad.&lt;/p&gt;&quot;,&quot;suggestion&quot;:&quot;&quot;,&quot;solution&quot;:1},{&quot;question&quot;:&quot;&lt;p&gt;Si \\(3-x \\leq 4\\), entonces \\(x \\geq -1\\)&lt;/p&gt;&quot;,&quot;feedback&quot;:&quot;&lt;p&gt;Sumamos \\(-3\\) en amos miembros con lo que la desigualdad se mantiene&lt;/p&gt;\n&lt;p style=\&quot;text-align: center;\&quot;&gt;\\(-x ≤ 1\\)&lt;/p&gt;\n&lt;p&gt;Multiplicamos por -1 con lo que la desigualdad cambia de sentido&lt;/p&gt;\n&lt;p style=\&quot;text-align: center;\&quot;&gt;\\(x ≥ -1\\)&lt;/p&gt;&quot;,&quot;suggestion&quot;:&quot;&quot;,&quot;solution&quot;:1}],&quot;isScorm&quot;:0,&quot;textButtonScorm&quot;:&quot;Guardar la puntuación&quot;,&quot;repeatActivity&quot;:true,&quot;weighted&quot;:100,&quot;evaluation&quot;:false,&quot;evaluationID&quot;:&quot;&quot;,&quot;showSlider&quot;:false,&quot;ideviceId&quot;:&quot;idevice-muqpno4w-eah2nzd5u&quot;}" data-idevice-template="trueorfalse.html">
+<div class="exe-trueorfalse-container">
+  
+    <div class="game-evaluation-ids js-hidden" data-id="idevice-muqpno4w-eah2nzd5u" data-evaluationb="false" data-evaluationid=""></div>
+        <div class="TOFP-instructions"></div>
+        <div class="TOFP-MainContainer" data-instance="idevice-muqpno4w-eah2nzd5u" id="tofPMainContainer-idevice-muqpno4w-eah2nzd5u">
+            <div class="TOFP-GameContainer" id="tofPGameContainer-idevice-muqpno4w-eah2nzd5u">
+                <div class="TOFP-GameScoreBoard TOFP-EHidden">
+                    <div class="TOFP-TimeNumber">
+                        <strong><span class="sr-av">Tiempo por pregunta:</span></strong>
+                        <p id="tofPPTime-idevice-muqpno4w-eah2nzd5u" class="TOFP-PTime">00:00:</p>
+                    </div>
+                </div>
+                <div class="TOFP-MessgeDiv" id="tofPMessageDiv-idevice-muqpno4w-eah2nzd5u">
+                    <div class="TOFP-Message" id="tofPMessage-idevice-muqpno4w-eah2nzd5u"></div>
+                </div>
+                <div class="TOFP-StartGameDiv TOFP-EHidden" id="tofPStartGameDiv-idevice-muqpno4w-eah2nzd5u">
+                    <button  id="tofPStartGame-idevice-muqpno4w-eah2nzd5u" type="button" class="btn btn-primary">Pulsa aquí para empezar</button>
+                </div>
+                <div class="TOFP-Multimedia " id="tofPMultimedia-idevice-muqpno4w-eah2nzd5u">
+                </div>
+                <div class="TOFP-CheckTestDiv TOFP-EHidden" id="tofPCheckTestDiv-idevice-muqpno4w-eah2nzd5u">
+                    <button id="tofPCheckTest-idevice-muqpno4w-eah2nzd5u" type="button" class="btn btn-primary">Comprobar</button>
+                    <button id="tofRebootTest-idevice-muqpno4w-eah2nzd5u" type="button" class="btn btn-primary TOFP-EHidden">¡Prueba otra vez!</button>
+                </div>
+        </div> 
+        </div>
+        <div class="Games-BottonContainer d-flex align-items-center justify-content-end mx-auto p-0 w-100"></div>
+        <div class="TOFP-After"></div>
+        <div class="questionsMedia" style="display:none"></div>
+</div>
+
+</div>
+</div>
+</article><article id="block-muqpno4w-06ldw05un" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_definicion.png" alt="" style="display:block;object-fit:contain;">
+</div>
+<h1 class="box-title">Resolución de una ecuación.</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-muqpno4w-e5kj27ouw" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-muqpno4w-e5kj27ouw&quot;}">
+<div class="exe-text-template">
+    <div align="left">
+<div align="left" style="text-align: justify;">
+<table border="0" cellpadding="10" style="width: 100%; background-color: #d4fada;">
+<tbody>
+<tr>
+<td style="width: 99.9169%;">
+<div align="left" style="text-align: justify;">Resolver una inecuación es <span style="color: #007932;"><span style="font-weight: bolder;">encontrar el conjunto</span> <span style="font-weight: bolder;">de números reales</span></span> que cumplen la desigualdad.</div>
+<div align="left" style="text-align: justify;">Este <span style="font-weight: bolder;">conjunto, generalmente infinito</span>, <span style="font-weight: bolder;">de soluciones</span> será un intervalo de la recta real.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<br />
+<div align="left" style="text-align: justify;">El proceso de resolución consiste en realizar transformaciones (suma, resta, multiplicación o división) de una misma cantidad en ambos miembros de una inecuación hasta obtener una inecuación en la que la incógnita se encuentre despejada en uno de sus miembros, en el otro haya un número y, entre ambos, uno de los signos de desigualdad.</div>
+<br />
+<div align="left" style="text-align: justify;">Resumiendo, el <span style="color: #000dff;"><strong>objetivo</strong></span> de estas transformaciones es obtener uno de los siguientes modelos (donde \(x\) es la incógnita y \(s\) un número real)</div>
+<p><br /></p>
+<table border="0" align="center" style="width: 58.0829%; height: 23px; background-color: #C2E0F4;">
+<tbody>
+<tr style="height: 23px;">
+<td style="width: 2.61941%; height: 23px; text-align: center;"><img src="../content/resources/eXe_LaTeX_math_4.gif" exe_math_latex="resources/eXe_LaTeX_math_4.gif.tex" exe_math_size="4" width="32" height="11" /></td>
+<td style="width: 3.05447%; height: 23px; text-align: center;"><img src="../content/resources/eXe_LaTeX_math_5.gif" exe_math_latex="resources/eXe_LaTeX_math_5.gif.tex" exe_math_size="4" width="40" height="15" /></td>
+<td style="width: 3.20963%; height: 23px; text-align: center;"><img src="../content/resources/eXe_LaTeX_math_6.gif" exe_math_latex="resources/eXe_LaTeX_math_6.gif.tex" exe_math_size="4" width="40" height="11" /></td>
+<td style="width: 2.10624%; height: 23px; text-align: center;"><img src="../content/resources/eXe_LaTeX_math_7.1.gif" exe_math_latex="resources/eXe_LaTeX_math_7.1.gif.tex" exe_math_size="4" width="40" height="15" /></td>
+</tr>
+</tbody>
+</table>
+<br />
+<div align="left" style="text-align: justify;">Finalmente, la solución de la inecuación vendrá dada por los infinitos valores que verifican esta última desigualdad. Es decir, todos los valores del intervalo que tienen por origen (o extremo) al valor s.</div>
+<div align="left" style="text-align: justify;"></div>
+</div>
+<ul>
+<li style="text-align: justify;">
+<p>Si el símbolo de desigualdad de la ecuación es estricto (es decir, es <img src="../content/resources/eXe_LaTeX_math_1.gif" exe_math_latex="resources/eXe_LaTeX_math_1.gif.tex" exe_math_size="4" /> o <img src="../content/resources/eXe_LaTeX_math_2.3.gif" exe_math_latex="resources/eXe_LaTeX_math_2.3.gif.tex" exe_math_size="4" />), entonces el extremo numérico de la semirrecta no forma parte del conjunto de soluciones de la inecuación.</p>
+</li>
+<li style="text-align: justify;">
+<p>Si el símbolo de desigualdad de la ecuación no es estricto (es decir, es <img src="../content/resources/eXe_LaTeX_math_3.4.gif" exe_math_latex="resources/eXe_LaTeX_math_3.4.gif.tex" exe_math_size="4" /> o <img src="../content/resources/eXe_LaTeX_math_4.3.gif" exe_math_latex="resources/eXe_LaTeX_math_4.3.gif.tex" exe_math_size="4" />), entonces el extremo numérico de la semirrecta sí forma parte del conjunto de soluciones de la inecuación.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</article><article id="block-muqpno4w-514eq8lfg" class="box no-header caja-libreta">
+<header class="box-head no-icon">
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-muqpno4w-pebg0141q" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-muqpno4w-pebg0141q&quot;}">
+<div class="exe-text-template">
+    <p style="text-align: justify;">El procedimiento de resolución de una inecuación es, de manera general, igual al de una ecuación. Los siguientes ejemplos te ayudarán a confirmar esta afirmación.</p>
+</div>
+</div>
+</div>
+</article><article id="block-muqpno4w-73mhtlsys" class="box caja-azul ejercicio-custom">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_casopractico.png" alt="" style="display:block;object-fit:contain;">
+</div>
+<h1 class="box-title">Ejemplo</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-muqpno4w-xlambpflc" class="idevice_node casestudy" data-idevice-path="../idevices/casestudy/" data-idevice-type="casestudy" data-idevice-component-type="json" data-idevice-json-data="{&quot;id&quot;:&quot;idevice-muqpno4w-xlambpflc&quot;,&quot;typeGame&quot;:&quot;Case study&quot;,&quot;history&quot;:&quot;&lt;p style=\&quot;text-align: justify;\&quot;&gt;La única diferencia, con respecto a la resolución de ecuaciones, que encontramos al resolver una inecuación es la que se refiere a la tercera de las propiedades de las desigualdades, es decir, la que se refiere al cambio de sentido de la desigualdad en el caso de multiplicarla o dividirla por un número negativo.&lt;/p&gt;\n&lt;p style=\&quot;text-align: justify;\&quot;&gt;Resuelve esta inecuación de dos maneras diferentes:&lt;/p&gt;\n&lt;ol&gt;\n&lt;li style=\&quot;text-align: justify;\&quot;&gt;\n&lt;p&gt;En primer lugar, transformarás la inecuación pasando los términos con incógnita al segundo miembro.&lt;/p&gt;\n&lt;/li&gt;\n&lt;li style=\&quot;text-align: justify;\&quot;&gt;\n&lt;p&gt;En segundo lugar, trabaja manteniendo las incógnitas en el primer miembro.&lt;/p&gt;\n&lt;/li&gt;\n&lt;/ol&gt;\n&lt;p style=\&quot;text-align: justify;\&quot;&gt;Una vez hayas acabado, haz clic en \&quot;Mostrar solución\&quot; para comprobar si lo has resuelto correctamente.&lt;/p&gt;&quot;,&quot;textInfoDurationInput&quot;:&quot;&quot;,&quot;textInfoDurationTextInput&quot;:&quot;&quot;,&quot;textInfoParticipantsInput&quot;:&quot;&quot;,&quot;textInfoParticipantsTextInput&quot;:&quot;&quot;,&quot;activities&quot;:[{&quot;activity&quot;:&quot;&lt;p&gt;La inecuación a resolver es \\[2x - 3 &amp;lt; 4x + 5\\]&lt;/p&gt;\n&lt;table align=\&quot;center\&quot; border=\&quot;0\&quot; style=\&quot;border: 0pt solid #ffffff;\&quot;&gt;\n&lt;tbody&gt;\n&lt;tr&gt;\n&lt;td style=\&quot;border: 1px solid #ffffff;\&quot;&gt;&lt;/td&gt;\n&lt;/tr&gt;\n&lt;/tbody&gt;\n&lt;/table&gt;&quot;,&quot;feedback&quot;:&quot;&lt;ul&gt;\n&lt;li&gt;\n&lt;p&gt;Primera forma de resolución:\\[ \\begin{align*}2x - 3 &amp;amp;&amp;lt; 4x + 5 \\\\ -3-5 &amp;amp;&amp;lt;4x-2x \\\\ -8 &amp;amp;&amp;lt;2x \\\\ \\dfrac{-8}{2} &amp;amp;&amp;lt;x \\\\-4 &amp;amp;&amp;lt;x \\end{align*}\\]&lt;/p&gt;\n&lt;/li&gt;\n&lt;li&gt;\n&lt;p&gt;Segunda forma de resolución:\\[ \\begin{align*}2x - 3 &amp;amp;&amp;lt; 4x + 5 \\\\ 2x-4x &amp;amp;&amp;lt;5+3 \\\\ -2x &amp;amp;&amp;lt;8 \\\\  x &amp;amp;&amp;gt;-4 \\end{align*}\\]&lt;/p&gt;\n&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;En ambos casos obtenemos la misma solución: \\(x&amp;gt;-4\\) , que corresponde al intervalo \\((-4,+\\infty)\\) &lt;/p&gt;&quot;,&quot;buttonCaption&quot;:&quot;Mostrar retroalimentación&quot;}]}" data-idevice-template="casestudy.html">
+<div class="exe-casestudy-container">
+  
+        <div class="caseStudyContent">            
+            <div class="CSP-Info mb-3">
+                
+            <dl>
+                <div class="inline"><dt><span title=""></span></dt><dd></dd></div>
+                <div class="inline"><dt><span title=""></span></dt><dd></dd></div>
+            </dl>
+            </div>
+            <div class="CSP-History mb-3" >
+                <p style="text-align: justify;">La única diferencia, con respecto a la resolución de ecuaciones, que encontramos al resolver una inecuación es la que se refiere a la tercera de las propiedades de las desigualdades, es decir, la que se refiere al cambio de sentido de la desigualdad en el caso de multiplicarla o dividirla por un número negativo.</p>
+<p style="text-align: justify;">Resuelve esta inecuación de dos maneras diferentes:</p>
+<ol>
+<li style="text-align: justify;">
+<p>En primer lugar, transformarás la inecuación pasando los términos con incógnita al segundo miembro.</p>
+</li>
+<li style="text-align: justify;">
+<p>En segundo lugar, trabaja manteniendo las incógnitas en el primer miembro.</p>
+</li>
+</ol>
+<p style="text-align: justify;">Una vez hayas acabado, haz clic en "Mostrar solución" para comprobar si lo has resuelto correctamente.</p>
+            </div>
+            <div class="CSP-Activities mb-3">
+                
+                <div class="CSP-ActivityDiv ">
+                    <div class="CSP-Activity mb-3">
+                        <p>La inecuación a resolver es \[2x - 3 &lt; 4x + 5\]</p>
+<table align="center" border="0" style="border: 0pt solid #ffffff;">
+<tbody>
+<tr>
+<td style="border: 1px solid #ffffff;"></td>
+</tr>
+</tbody>
+</table>
+                    </div>
+                    
+                    <div class="iDevice_buttons feedback-button js-required">
+                        <input type="button" class="CSP-FeedbackBtn feedbacktooglebutton" value="Mostrar retroalimentación">
+                    </div>
+                    <div class="CSP-FeedbackText feedback js-feedback js-hidden" style="display: none;">
+                        <ul>
+<li>
+<p>Primera forma de resolución:\[ \begin{align*}2x - 3 &amp;&lt; 4x + 5 \\ -3-5 &amp;&lt;4x-2x \\ -8 &amp;&lt;2x \\ \dfrac{-8}{2} &amp;&lt;x \\-4 &amp;&lt;x \end{align*}\]</p>
+</li>
+<li>
+<p>Segunda forma de resolución:\[ \begin{align*}2x - 3 &amp;&lt; 4x + 5 \\ 2x-4x &amp;&lt;5+3 \\ -2x &amp;&lt;8 \\  x &amp;&gt;-4 \end{align*}\]</p>
+</li>
+</ul>
+<p>En ambos casos obtenemos la misma solución: \(x&gt;-4\) , que corresponde al intervalo \((-4,+\infty)\) </p>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+    
+</div>
+
+</div>
+</div>
+</article><article id="block-muqpno4w-0j134cs8o" class="box no-header sin-nada">
+<header class="box-head no-icon">
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-muqpno4w-q3a6dzyno" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-muqpno4w-q3a6dzyno&quot;}">
+<p>A continuación, tienes un problema que debe resolverse mediante el uso de inecuaciones.</p>
+</div>
+</div>
+</article><article id="block-muqpno4w-8e1w6ijmy" class="box caja-azul ejercicio-custom">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_casopractico.png" alt="" style="display:block;object-fit:contain;">
+</div>
+<h1 class="box-title">Ejemplo</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-muqpno4w-h0aai6pcm" class="idevice_node casestudy" data-idevice-path="../idevices/casestudy/" data-idevice-type="casestudy" data-idevice-component-type="json" data-idevice-json-data="{&quot;id&quot;:&quot;idevice-muqpno4w-h0aai6pcm&quot;,&quot;typeGame&quot;:&quot;Case study&quot;,&quot;history&quot;:&quot;&lt;p style=\&quot;text-align: justify;\&quot;&gt;Jesús es el chico de mayor edad de un equipo de fútbol de categoría infantil. Es un poco bromista y, además, está bien preparado en Matemáticas. Ante la pregunta realizada por el nuevo entrenador: \&quot;&lt;em&gt;¿cuántos años tienes?&lt;/em&gt;\&quot;, Jesús le responde: “&lt;em&gt;El doble de mi edad más dos años es mayor que mi edad más 14 años&lt;/em&gt;”.&lt;/p&gt;&quot;,&quot;textInfoDurationInput&quot;:&quot;&quot;,&quot;textInfoDurationTextInput&quot;:&quot;&quot;,&quot;textInfoParticipantsInput&quot;:&quot;&quot;,&quot;textInfoParticipantsTextInput&quot;:&quot;&quot;,&quot;activities&quot;:[{&quot;activity&quot;:&quot;&lt;p&gt;Con esta pista el nuevo entrenador no puede obtener la edad de Jesús, pero ¿puede averiguar que edad tiene Jesús como mínimo?&lt;/p&gt;&quot;,&quot;feedback&quot;:&quot;&lt;p&gt;Llamemos x a la edad de Jesús. Entonces,&lt;/p&gt;\n&lt;p style=\&quot;text-align: center;\&quot;&gt;\\(2x + 2 &amp;gt; x + 14\\)&lt;/p&gt;\n&lt;p style=\&quot;text-align: center;\&quot;&gt;\\(2x - x &amp;gt; 14 - 2\\)&lt;/p&gt;\n&lt;p style=\&quot;text-align: center;\&quot;&gt;\\(x &amp;gt; 12\\)&lt;/p&gt;\n&lt;p&gt;&lt;span style=\&quot;color: #000dff;\&quot;&gt;&lt;b&gt;Jesús es mayor de 12 años.&lt;/b&gt;&lt;/span&gt;&lt;/p&gt;&quot;,&quot;buttonCaption&quot;:&quot;Solución&quot;}]}" data-idevice-template="casestudy.html">
+<div class="exe-casestudy-container">
+  
+        <div class="caseStudyContent">            
+            <div class="CSP-Info mb-3">
+                
+            <dl>
+                <div class="inline"><dt><span title=""></span></dt><dd></dd></div>
+                <div class="inline"><dt><span title=""></span></dt><dd></dd></div>
+            </dl>
+            </div>
+            <div class="CSP-History mb-3" >
+                <p style="text-align: justify;">Jesús es el chico de mayor edad de un equipo de fútbol de categoría infantil. Es un poco bromista y, además, está bien preparado en Matemáticas. Ante la pregunta realizada por el nuevo entrenador: "<em>¿cuántos años tienes?</em>", Jesús le responde: “<em>El doble de mi edad más dos años es mayor que mi edad más 14 años</em>”.</p>
+            </div>
+            <div class="CSP-Activities mb-3">
+                
+                <div class="CSP-ActivityDiv ">
+                    <div class="CSP-Activity mb-3">
+                        <p>Con esta pista el nuevo entrenador no puede obtener la edad de Jesús, pero ¿puede averiguar que edad tiene Jesús como mínimo?</p>
+                    </div>
+                    
+                    <div class="iDevice_buttons feedback-button js-required">
+                        <input type="button" class="CSP-FeedbackBtn feedbacktooglebutton" value="Solución">
+                    </div>
+                    <div class="CSP-FeedbackText feedback js-feedback js-hidden" style="display: none;">
+                        <p>Llamemos x a la edad de Jesús. Entonces,</p>
+<p style="text-align: center;">\(2x + 2 &gt; x + 14\)</p>
+<p style="text-align: center;">\(2x - x &gt; 14 - 2\)</p>
+<p style="text-align: center;">\(x &gt; 12\)</p>
+<p><span style="color: #000dff;"><b>Jesús es mayor de 12 años.</b></span></p>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+    
+</div>
+
+</div>
+</div>
+</article><article id="block-muqpno4w-1stp258yq" class="box caja-morada boton-morado">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_v_o_f.png" alt="" style="display:block;object-fit:contain;">
+</div>
+<h1 class="box-title">Verdadero o falso.</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-muqpno4w-01h6g9n1v" class="idevice_node trueorfalse" data-idevice-path="../idevices/trueorfalse/" data-idevice-type="trueorfalse" data-idevice-component-type="json" data-idevice-json-data="{&quot;id&quot;:&quot;idevice-muqpno4w-01h6g9n1v&quot;,&quot;typeGame&quot;:&quot;TrueOrFalse&quot;,&quot;eXeGameInstructions&quot;:&quot;&lt;div align=\&quot;left\&quot; style=\&quot;text-align: justify;\&quot;&gt;Indica si el intervalo propuesto como solución en cada caso, es &lt;b&gt;Verdadero &lt;/b&gt;o &lt;b&gt;Falso&lt;/b&gt;.&lt;/div&gt;&quot;,&quot;eXeIdeviceTextAfter&quot;:&quot;&quot;,&quot;msgs&quot;:{&quot;msgStartGame&quot;:&quot;Pulsa aquí para empezar&quot;,&quot;msgTime&quot;:&quot;Tiempo por pregunta&quot;,&quot;msgNoImage&quot;:&quot;Pregunta sin imágenes&quot;,&quot;msgScoreScorm&quot;:&quot;La puntuación no se puede guardar porque esta página no forma parte  de un paquete SCORM.&quot;,&quot;msgEndGameScore&quot;:&quot;Comience la partida antes de guardar la puntuación.&quot;,&quot;msgOnlySaveScore&quot;:&quot;¡Solo puede guardar la puntuación una vez!&quot;,&quot;msgOnlySave&quot;:&quot;Solo puede guardar una vez&quot;,&quot;msgYouScore&quot;:&quot;Su puntuación&quot;,&quot;msgAuthor&quot;:&quot;Autoría&quot;,&quot;msgOnlySaveAuto&quot;:&quot;Su puntuación se guardará después de cada pregunta. Solo puede jugar una vez.&quot;,&quot;msgSaveAuto&quot;:&quot;Su puntuación se guardará automáticamente después de cada pregunta.&quot;,&quot;msgSeveralScore&quot;:&quot;Puede guardar la puntuación tantas veces como quiera&quot;,&quot;msgYouLastScore&quot;:&quot;La última puntuación guardada es&quot;,&quot;msgActityComply&quot;:&quot;Ya ha realizado esta actividad.&quot;,&quot;msgPlaySeveralTimes&quot;:&quot;Puede realizar esta actividad cuantas veces quiera&quot;,&quot;msgUncompletedActivity&quot;:&quot;Actividad no completada&quot;,&quot;msgSuccessfulActivity&quot;:&quot;Actividad superada. Puntuación: %s&quot;,&quot;msgUnsuccessfulActivity&quot;:&quot;Actividad no superada. Puntuación: %s&quot;,&quot;msgTypeGame&quot;:&quot;Verdadero o falso&quot;,&quot;msgFeedback&quot;:&quot;Retroalimentación&quot;,&quot;msgSuggestion&quot;:&quot;Sugerencia&quot;,&quot;msgSolution&quot;:&quot;Solución&quot;,&quot;msgQuestion&quot;:&quot;Pregunta&quot;,&quot;msgTrue&quot;:&quot;Verdadero&quot;,&quot;msgFalse&quot;:&quot;Falso&quot;,&quot;msgOk&quot;:&quot;Correcto&quot;,&quot;msgKO&quot;:&quot;Incorrecto&quot;,&quot;msgShow&quot;:&quot;Mostrar&quot;,&quot;msgHide&quot;:&quot;Ocultar&quot;,&quot;msgCheck&quot;:&quot;Comprobar&quot;,&quot;msgReboot&quot;:&quot;¡Prueba otra vez!&quot;,&quot;msgScore&quot;:&quot;Puntuación&quot;,&quot;msgWeight&quot;:&quot;Peso&quot;,&quot;msgNext&quot;:&quot;Siguiente&quot;,&quot;msgPrevious&quot;:&quot;Anterior&quot;,&quot;textButtonScorm&quot;:&quot;Guardar la puntuación&quot;},&quot;questionsRandom&quot;:false,&quot;percentageQuestions&quot;:100,&quot;isTest&quot;:false,&quot;time&quot;:0,&quot;attemptsNumber&quot;:1,&quot;questionsGame&quot;:[{&quot;question&quot;:&quot;&lt;ol style=\&quot;list-style-type: lower-alpha;\&quot;&gt;\n&lt;li&gt;\\(3x+5 \\leq 8  \\longrightarrow\\) &lt;span style=\&quot;color: #7a297b;\&quot;&gt;&lt;strong&gt;Solución:&lt;/strong&gt;&lt;/span&gt; \\((-\\infty , 1) \\)&lt;/li&gt;\n&lt;/ol&gt;&quot;,&quot;feedback&quot;:&quot;&lt;p&gt;Solución: \\(x \\leq 1\\)  que, expresado en forma de intervalo, es \\((-\\infty , 1] \\)&lt;/p&gt;&quot;,&quot;suggestion&quot;:&quot;&quot;,&quot;solution&quot;:0},{&quot;question&quot;:&quot;&lt;ol style=\&quot;list-style-type: lower-alpha;\&quot; start=\&quot;2\&quot;&gt;\n&lt;li&gt;&lt;b&gt; &lt;/b&gt; \\(5x&amp;gt;9-x-3 \\longrightarrow\\) &lt;span style=\&quot;color: #7a297b;\&quot;&gt;&lt;strong&gt;Solución:&lt;/strong&gt;&lt;/span&gt;  \\((1,+\\infty)\\)&lt;/li&gt;\n&lt;/ol&gt;&quot;,&quot;feedback&quot;:&quot;&quot;,&quot;suggestion&quot;:&quot;&quot;,&quot;solution&quot;:1},{&quot;question&quot;:&quot;&lt;ol style=\&quot;list-style-type: lower-alpha;\&quot; start=\&quot;3\&quot;&gt;\n&lt;li&gt;&lt;b&gt; &lt;/b&gt;\\(-3x+5 \\geq 10+x-25 \\longrightarrow\\) &lt;span style=\&quot;color: #7a297b;\&quot;&gt;&lt;strong&gt;Solución: &lt;/strong&gt;&lt;/span&gt;\\(\\left(-\\infty,-\\dfrac{1}{2} \\right] \\)&lt;/li&gt;\n&lt;/ol&gt;&quot;,&quot;feedback&quot;:&quot;&lt;p&gt;Solución: \\(x \\leq 5\\)  que, expresado en forma de intervalo, es \\(\\left(-\\infty,5 \\right] \\)&lt;/p&gt;&quot;,&quot;suggestion&quot;:&quot;&quot;,&quot;solution&quot;:0}],&quot;isScorm&quot;:0,&quot;textButtonScorm&quot;:&quot;Guardar la puntuación&quot;,&quot;repeatActivity&quot;:true,&quot;weighted&quot;:100,&quot;evaluation&quot;:false,&quot;evaluationID&quot;:&quot;&quot;,&quot;showSlider&quot;:false,&quot;ideviceId&quot;:&quot;idevice-muqpno4w-01h6g9n1v&quot;}" data-idevice-template="trueorfalse.html">
+<div class="exe-trueorfalse-container">
+  
+    <div class="game-evaluation-ids js-hidden" data-id="idevice-muqpno4w-01h6g9n1v" data-evaluationb="false" data-evaluationid=""></div>
+        <div class="TOFP-instructions"><div align="left" style="text-align: justify;">Indica si el intervalo propuesto como solución en cada caso, es <b>Verdadero </b>o <b>Falso</b>.</div></div>
+        <div class="TOFP-MainContainer" data-instance="idevice-muqpno4w-01h6g9n1v" id="tofPMainContainer-idevice-muqpno4w-01h6g9n1v">
+            <div class="TOFP-GameContainer" id="tofPGameContainer-idevice-muqpno4w-01h6g9n1v">
+                <div class="TOFP-GameScoreBoard TOFP-EHidden">
+                    <div class="TOFP-TimeNumber">
+                        <strong><span class="sr-av">Tiempo por pregunta:</span></strong>
+                        <p id="tofPPTime-idevice-muqpno4w-01h6g9n1v" class="TOFP-PTime">00:00:</p>
+                    </div>
+                </div>
+                <div class="TOFP-MessgeDiv" id="tofPMessageDiv-idevice-muqpno4w-01h6g9n1v">
+                    <div class="TOFP-Message" id="tofPMessage-idevice-muqpno4w-01h6g9n1v"></div>
+                </div>
+                <div class="TOFP-StartGameDiv TOFP-EHidden" id="tofPStartGameDiv-idevice-muqpno4w-01h6g9n1v">
+                    <button  id="tofPStartGame-idevice-muqpno4w-01h6g9n1v" type="button" class="btn btn-primary">Pulsa aquí para empezar</button>
+                </div>
+                <div class="TOFP-Multimedia " id="tofPMultimedia-idevice-muqpno4w-01h6g9n1v">
+                </div>
+                <div class="TOFP-CheckTestDiv TOFP-EHidden" id="tofPCheckTestDiv-idevice-muqpno4w-01h6g9n1v">
+                    <button id="tofPCheckTest-idevice-muqpno4w-01h6g9n1v" type="button" class="btn btn-primary">Comprobar</button>
+                    <button id="tofRebootTest-idevice-muqpno4w-01h6g9n1v" type="button" class="btn btn-primary TOFP-EHidden">¡Prueba otra vez!</button>
+                </div>
+        </div> 
+        </div>
+        <div class="Games-BottonContainer d-flex align-items-center justify-content-end mx-auto p-0 w-100"></div>
+        <div class="TOFP-After"></div>
+        <div class="questionsMedia" style="display:none"></div>
+</div>
+
+</div>
+</div>
+</article><article id="block-mur9w2k8-mre23ykwo" class="box caja-morada">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_tarjeta.png" alt="" style="display:block;object-fit:contain;">
+</div>
+<h1 class="box-title">Verdadero o falso</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-1790964279799-653txtdex" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-1790964279799-653txtdex&quot;}">
+<div class="exe-text-template">
+    <p>Piensa si la afirmación es Verdadera o Falsa y haz clic en cada tarjeta para comprobar el razonamiento matemático paso a paso:</p>
+<!-- CONTENEDOR DE TARJETAS (PARTE 1) -->
+<div style="display: flex; flex-wrap: wrap; gap: 25px; justify-content: center; font-family: system-ui, -apple-system, sans-serif; margin-bottom: 20px;"><!-- TARJETA 1: EJERCICIO 1 DE LA IMAGEN -->
+<div onclick="this.classList.toggle('girada')" style="perspective: 1000px; width: 320px; height: 260px; cursor: pointer;">
+<div class="tarjeta-interna" style="position: relative; width: 100%; height: 100%; text-align: center; transition: transform 0.6s; transform-style: preserve-3d; box-shadow: 0 4px 8px rgba(0,0,0,0.1); border-radius: 10px;"><!-- Cara Delantera -->
+<div style="position: absolute; width: 100%; height: 100%; backface-visibility: hidden; border-radius: 10px; background-color: #fbf3fb; border: 2px solid #7a297b; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 15px; box-sizing: border-box;"><span style="font-size: 1.8rem; margin-bottom: 5px;">🤔 ¿Verdadero o Falso?</span>
+<p style="margin: 5px 0; font-size: 0.95rem; color: #333; line-height: 1.4;">El intervalo \((-\infty,4]\) es la solución de la inecuación:</p>
+<span style="font-size: 1.25rem; font-weight: bold; color: #7a297b;">\[2x - 3 &lt; x + 1\]</span></div>
+<!-- Cara Trasera -->
+<div style="position: absolute; width: 100%; height: 100%; backface-visibility: hidden; border-radius: 10px; background-color: #ffffff; border: 2px solid #7a297b; transform: rotateY(180deg); display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 15px; box-sizing: border-box;"><span style="font-weight: bold; color: #d32f2f; font-size: 1.1rem; margin-bottom: 5px;">❌ ¡FALSO!</span>
+<p style="margin: 0 0 5px 0; font-size: 0.85rem; color: #555; line-height: 1.3;">Al resolver agrupando las letras:</p>
+<span style="font-size: 1rem; color: #7a297b;">\[2x - x &lt; 1 + 3 \implies x &lt; 4\]</span>
+<p style="margin: 0; font-size: 0.82rem; color: #333; line-height: 1.3;">Como el signo es menor estricto (\(&lt;\)), el 4 no se incluye. El intervalo correcto debe ser abierto: \(\pmb{(-\infty, 4)}\).</p>
+</div>
+</div>
+</div>
+<!-- TARJETA 2: EJERCICIO 2 DE LA IMAGEN -->
+<div onclick="this.classList.toggle('girada')" style="perspective: 1000px; width: 320px; height: 260px; cursor: pointer;">
+<div class="tarjeta-interna" style="position: relative; width: 100%; height: 100%; text-align: center; transition: transform 0.6s; transform-style: preserve-3d; box-shadow: 0 4px 8px rgba(0,0,0,0.1); border-radius: 10px;"><!-- Cara Delantera -->
+<div style="position: absolute; width: 100%; height: 100%; backface-visibility: hidden; border-radius: 10px; background-color: #fbf3fb; border: 2px solid #7a297b; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 15px; box-sizing: border-box;"><span style="font-size: 1.8rem; margin-bottom: 5px;">🤔 ¿Verdadero o Falso?</span>
+<p style="margin: 5px 0; font-size: 0.95rem; color: #333; line-height: 1.4;">La solución de esta inecuación es el intervalo \(\left[\dfrac{3}{7}, +\infty\right)\):</p>
+<span style="font-size: 1.1rem; font-weight: bold; color: #7a297b;">\[3(x+1) \ge -2(2x-3)\]</span></div>
+<!-- Cara Trasera -->
+<div style="position: absolute; width: 100%; height: 100%; backface-visibility: hidden; border-radius: 10px; background-color: #ffffff; border: 2px solid #7a297b; transform: rotateY(180deg); display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 12px; box-sizing: border-box;"><span style="font-weight: bold; color: #388e3c; font-size: 1.1rem; margin-bottom: 2px;">✅ ¡VERDADERO!</span>
+<p style="margin: 0; font-size: 0.8rem; color: #555; line-height: 1.2;">Quitamos paréntesis multiplicando:</p>
+<span style="font-size: 0.95rem; color: #7a297b;">\[3x + 3 \ge -4x + 6\]</span> <span style="font-size: 0.95rem; color: #7a297b;">\[3x + 4x \ge 6 - 3 \implies 7x \ge 3\]</span>
+<p style="margin: 0; font-size: 0.82rem; color: #333; line-height: 1.3;">Despejando obtenemos \(x \ge \dfrac{3}{7}\). Al incluir el signo \(\ge\), el corchete es cerrado \(\pmb{\left[\dfrac{3}{7}, +\infty\right)}\).</p>
+</div>
+</div>
+</div>
+<!-- TARJETA 3: EJERCICIO ADICIONAL (ALERTA SIGNO NEGATIVO) -->
+<div onclick="this.classList.toggle('girada')" style="perspective: 1000px; width: 320px; height: 260px; cursor: pointer;">
+<div class="tarjeta-interna" style="position: relative; width: 100%; height: 100%; text-align: center; transition: transform 0.6s; transform-style: preserve-3d; box-shadow: 0 4px 8px rgba(0,0,0,0.1); border-radius: 10px;"><!-- Cara Delantera -->
+<div style="position: absolute; width: 100%; height: 100%; backface-visibility: hidden; border-radius: 10px; background-color: #fbf3fb; border: 2px solid #7a297b; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 15px; box-sizing: border-box;"><span style="font-size: 1.8rem; margin-bottom: 5px;">🤔 ¿Verdadero o Falso?</span>
+<p style="margin: 5px 0; font-size: 0.95rem; color: #333; line-height: 1.4;">El intervalo \((2, +\infty)\) es la solución de la inecuación:</p>
+<span style="font-size: 1.25rem; font-weight: bold; color: #7a297b;">\[-3x + 5 &lt; -1\]</span></div>
+<!-- Cara Trasera -->
+<div style="position: absolute; width: 100%; height: 100%; backface-visibility: hidden; border-radius: 10px; background-color: #ffffff; border: 2px solid #7a297b; transform: rotateY(180deg); display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 15px; box-sizing: border-box;"><span style="font-weight: bold; color: #388e3c; font-size: 1.1rem; margin-bottom: 5px;">✅ ¡VERDADERO!</span>
+<p style="margin: 0 0 5px 0; font-size: 0.85rem; color: #555; line-height: 1.3;">Pasamos el 5 restando al otro lado:</p>
+<span style="font-size: 1rem; color: #7a297b;">\[-3x &lt; -1 - 5 \implies -3x &lt; -6\]</span>
+<p style="margin: 0; font-size: 0.82rem; color: #333; line-height: 1.3;"><strong>¡Regla de oro!</strong> Al pasar dividiendo el \(-3\) (negativo), la desigualdad gira de dirección: \(x &gt; \dfrac{-6}{-3} \implies x &gt; 2\), dando \(\pmb{(2, +\infty)}\).</p>
+</div>
+</div>
+</div>
+<!-- TARJETA 4: EJERCICIO ADICIONAL (DESPEJE CON CORCHETE) -->
+<div onclick="this.classList.toggle('girada')" style="perspective: 1000px; width: 320px; height: 260px; cursor: pointer;">
+<div class="tarjeta-interna" style="position: relative; width: 100%; height: 100%; text-align: center; transition: transform 0.6s; transform-style: preserve-3d; box-shadow: 0 4px 8px rgba(0,0,0,0.1); border-radius: 10px;"><!-- Cara Delantera -->
+<div style="position: absolute; width: 100%; height: 100%; backface-visibility: hidden; border-radius: 10px; background-color: #fbf3fb; border: 2px solid #7a297b; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 15px; box-sizing: border-box;"><span style="font-size: 1.8rem; margin-bottom: 5px;">🤔 ¿Verdadero o Falso?</span>
+<p style="margin: 5px 0; font-size: 0.95rem; color: #333; line-height: 1.4;">La solución de esta inecuación es el intervalo \((-\infty, -3]\):</p>
+<span style="font-size: 1.25rem; font-weight: bold; color: #7a297b;">\[x - 2 \le 3x + 4\]</span></div>
+<!-- Cara Trasera -->
+<div style="position: absolute; width: 100%; height: 100%; backface-visibility: hidden; border-radius: 10px; background-color: #ffffff; border: 2px solid #7a297b; transform: rotateY(180deg); display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 15px; box-sizing: border-box;"><span style="font-weight: bold; color: #d32f2f; font-size: 1.1rem; margin-bottom: 5px;">❌ ¡FALSO!</span>
+<p style="margin: 0 0 5px 0; font-size: 0.85rem; color: #555; line-height: 1.3;">Agrupamos los elementos y operamos:</p>
+<span style="font-size: 0.95rem; color: #7a297b;">\[x - 3x \le 4 + 2 \implies -2x \le 6\]</span>
+<p style="margin: 0; font-size: 0.82rem; color: #333; line-height: 1.3;">Al dividir entre el número negativo \(-2\), el signo cambia a mayor o igual: \(x \ge -3\). Por tanto, la solución real es \(\pmb{[-3, +\infty)}\).</p>
+</div>
+</div>
+</div>
+</div>
+<!-- ESTILOS ANIMACIÓN -->
+<style>
+    .girada .tarjeta-interna {
+        transform: rotateY(180deg);
+    }
+</style>
+</div>
+</div>
+</div>
+</article><article id="block-muqpno4w-5nhbxnbl4" class="box caja-morada boton-morado">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_formulario.png" alt="" style="display:block;object-fit:contain;">
+</div>
+<h1 class="box-title">Pregunta.</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-muqpno4w-skzeosscm" class="idevice_node form" data-idevice-path="../idevices/form/" data-idevice-type="form" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-muqpno4w-skzeosscm&quot;,&quot;evaluation&quot;:false,&quot;evaluationID&quot;:&quot;&quot;,&quot;repeatActivity&quot;:true,&quot;isScorm&quot;:0,&quot;textButtonScorm&quot;:&quot;Guardar la puntuación&quot;,&quot;weighted&quot;:100,&quot;msgs&quot;:{&quot;msgScoreScorm&quot;:&quot;La puntuación no se puede guardar porque esta página no forma parte  de un paquete SCORM.&quot;,&quot;msgYouScore&quot;:&quot;Tu puntuación es&quot;,&quot;msgEndGameScore&quot;:&quot;Comience la partida antes de guardar la puntuación.&quot;,&quot;msgScore&quot;:&quot;Puntuación&quot;,&quot;msgWeight&quot;:&quot;Peso&quot;,&quot;msgYouLastScore&quot;:&quot;La última puntuación guardada es&quot;,&quot;msgOnlySaveScore&quot;:&quot;¡Solo puede guardar la puntuación una vez!&quot;,&quot;msgOnlySave&quot;:&quot;Solo puede guardar una vez&quot;,&quot;msgOnlySaveAuto&quot;:&quot;Su puntuación se guardará después de cada pregunta. Solo puede jugar una vez.&quot;,&quot;msgSaveAuto&quot;:&quot;Su puntuación se guardará automáticamente después de cada pregunta.&quot;,&quot;msgSeveralScore&quot;:&quot;Puede guardar la puntuación tantas veces como quiera&quot;,&quot;msgPlaySeveralTimes&quot;:&quot;Puede realizar esta actividad cuantas veces quiera&quot;,&quot;msgActityComply&quot;:&quot;Ya ha realizado esta actividad.&quot;,&quot;msgUncompletedActivity&quot;:&quot;Actividad no completada&quot;,&quot;msgSuccessfulActivity&quot;:&quot;Actividad superada. Puntuación: %s&quot;,&quot;msgUnsuccessfulActivity&quot;:&quot;Actividad no superada. Puntuación: %s&quot;,&quot;msgTypeGame&quot;:&quot;Formulario&quot;,&quot;msgStartGame&quot;:&quot;Pulsa aquí para empezar&quot;,&quot;msgTime&quot;:&quot;Tiempo por pregunta&quot;,&quot;msgSaveScore&quot;:&quot;Guardar la puntuación&quot;,&quot;msgResult&quot;:&quot;Resultado&quot;,&quot;msgCheck&quot;:&quot;Comprobar&quot;,&quot;msgReset&quot;:&quot;Reiniciar&quot;,&quot;msgShowAnswers&quot;:&quot;Mostrar respuestas&quot;,&quot;msgTestResultPass&quot;:&quot;¡Felicidades! Has pasado la prueba&quot;,&quot;msgTestResultNotPass&quot;:&quot;Lo siento. Has fallado la prueba&quot;,&quot;msgTrueFalseHelp&quot;:&quot;Di si la afirmación es verdadera o falsa&quot;,&quot;msgDropdownHelp&quot;:&quot;Elige la respuesta correcta entre las opciones propuestas&quot;,&quot;msgFillHelp&quot;:&quot;Rellena los espacios en blanco con la palabra apropiada&quot;,&quot;msgSingleSelectionHelp&quot;:&quot;Opción múltiple con solo una respuesta correcta&quot;,&quot;msgMultipleSelectionHelp&quot;:&quot;Opción múltiple con varias respuestas correctas&quot;,&quot;msgPlayStart&quot;:&quot;Pulsa aquí para empezar&quot;,&quot;msgTrue&quot;:&quot;Verdadero&quot;,&quot;msgFalse&quot;:&quot;Falso&quot;,&quot;msgNext&quot;:&quot;Siguiente&quot;,&quot;msgPrevious&quot;:&quot;Anterior&quot;,&quot;msgSuggestion&quot;:&quot;Sugerencia&quot;,&quot;msgOk&quot;:&quot;Correcto&quot;,&quot;msgKO&quot;:&quot;Incorrecto&quot;,&quot;msgHide&quot;:&quot;Ocultar&quot;},&quot;id&quot;:&quot;idevice-muqpno4w-skzeosscm&quot;,&quot;questionsRandom&quot;:false,&quot;percentageQuestions&quot;:&quot;100&quot;,&quot;time&quot;:&quot;0&quot;,&quot;eXeFormInstructions&quot;:&quot;&lt;p&gt;Responde a las preguntas del cuestionario&lt;/p&gt;&quot;,&quot;questionsData&quot;:[{&quot;id&quot;:&quot;1790964621566-7TPA1&quot;,&quot;activityType&quot;:&quot;selection&quot;,&quot;baseText&quot;:&quot;&lt;p style=\&quot;text-align: justify;\&quot;&gt;¿Cuáles de las siguientes inecuaciones tienen como solución la siguiente representación gráfica?&lt;/p&gt;\n&lt;p style=\&quot;text-align: justify;\&quot;&gt;&lt;/p&gt;\n&lt;table border=\&quot;0\&quot; align=\&quot;center\&quot; style=\&quot;width: 55%; margin-left: auto; margin-right: auto;\&quot;&gt;\n&lt;tbody&gt;\n&lt;tr&gt;\n&lt;td style=\&quot;border: 1px solid #ffffff; background-color: #ffffff;\&quot;&gt;&lt;img alt=\&quot;Solución\&quot; src=\&quot;../content/resources/graf_inec3.jpg\&quot; style=\&quot;width: 100%;\&quot; title=\&quot;Solución\&quot; width=\&quot;417\&quot; height=\&quot;38\&quot; /&gt;&lt;/td&gt;\n&lt;/tr&gt;\n&lt;/tbody&gt;\n&lt;/table&gt;\n&lt;p&gt;&lt;/p&gt;\n&lt;p&gt;&lt;/p&gt;&quot;,&quot;feedbackRight&quot;:&quot;&quot;,&quot;feedbackWrong&quot;:&quot;&quot;,&quot;suggestion&quot;:&quot;&quot;,&quot;wrongAnswersValue&quot;:&quot;&quot;,&quot;selectionType&quot;:&quot;multiple&quot;,&quot;answers&quot;:[{&quot;0&quot;:false,&quot;1&quot;:&quot;\\(2x + 1 ≥ 3\\)&quot;},{&quot;0&quot;:false,&quot;1&quot;:&quot;\\(3(x + 2) ≥ 0\\)&quot;},{&quot;0&quot;:true,&quot;1&quot;:&quot;\\(2(x + 5) &gt; 2 - 2x\\)&quot;}],&quot;answer&quot;:&quot;1&quot;,&quot;capitalization&quot;:false,&quot;strict&quot;:false,&quot;order&quot;:0,&quot;customScore&quot;:1,&quot;time&quot;:0}],&quot;passRate&quot;:5,&quot;addBtnAnswers&quot;:true,&quot;eXeIdeviceTextAfter&quot;:&quot;&quot;,&quot;showSlider&quot;:false}" data-idevice-template="form.html">
+<div class="exe-form-container">
+  <div class="game-evaluation-ids js-hidden" data-id="idevice-muqpno4w-skzeosscm" data-evaluationb="false" data-evaluationid=""></div>
+            <div id="frmMainContainer-idevice-muqpno4w-skzeosscm" class="form-IDevice" data-id="idevice-muqpno4w-skzeosscm">
+                <div class="form-Data js-hidden">{}</div>
+                <div class="form-instructions"><p>Responde a las preguntas del cuestionario</p></div>
+                <div class="FRMP-GameScoreBoard" style="display:none;">
+                    <div>
+                        <strong><span class="sr-av">Tiempo por pregunta:</span></strong>
+                        <span id="frmPTime-idevice-muqpno4w-skzeosscm">00:00</span>
+                    </div>
+                </div>
+                <div class="FRMP-StartGame" id="frmStartGameDiv-idevice-muqpno4w-skzeosscm" style="display:none;">
+                      <button  id="frmStartGame-idevice-muqpno4w-skzeosscm" type="button" class="btn btn-primary">Pulsa aquí para empezar</button>
+                </div>
+                <div class="form-body" id="frmBody-idevice-muqpno4w-skzeosscm" style="display:block;">
+                    <div class="FRMP-Questions">
+                        <div id="form-questions-idevice-muqpno4w-skzeosscm" > </div>
+                        <div id="frmCover-idevice-muqpno4w-skzeosscm" class="FRMP-Cover"> </div>
+                    </div>
+                    <div id="resultsContainer-idevice-muqpno4w-skzeosscm" class="form-results-container inline">
+                        <div id="form-score-idevice-muqpno4w-skzeosscm" class="score-text">Puntuación.</div>
+                        <div id="form-result-test-idevice-muqpno4w-skzeosscm" class="score-text phrase-score"></div>
+                    </div>
+                    <div class="form-buttons-container inline">
+                        <input id="form-button-check-idevice-muqpno4w-skzeosscm" class="btn btn-primary" type="button" value="Comprobar"
+                            data-id="idevice-muqpno4w-skzeosscm" data-pass-rate="" />
+                        <input id="form-button-reset-idevice-muqpno4w-skzeosscm" type="button" value="Reiniciar"
+                            data-id="idevice-muqpno4w-skzeosscm" class="btn btn-primary"  style="display:none" />
+                        <input id="form-button-show-answers-idevice-muqpno4w-skzeosscm" class="btn btn-primary" type="button" value="Mostrar respuestas"
+                            data-id="idevice-muqpno4w-skzeosscm" style="display: " />
+
+                    </div>
+                </div>
+                <div class="Games-BottonContainer d-flex align-items-center justify-content-end mx-auto p-0 w-100"></div>
+                
+            </div>
+            <div class="questionsMedia" style="display:none"><img alt="Solución" src="../content/resources/graf_inec3.jpg" style="width: 100%;" title="Solución" width="417" height="38"><a href="../content/resources/graf_inec3.jpg" class="js-hidden form-media-img">0</a></div>
+            
+</div>
+</div>
+</div>
+</article><article id="block-muqpno4w-4x1r4cd3g" class="box caja-azul ejercicio-custom">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_ejercicioresuelto.png" alt="" style="display:block;object-fit:contain;">
+</div>
+<h1 class="box-title">Ejercicio.</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-muqpno4w-b3j6g2u01" class="idevice_node casestudy" data-idevice-path="../idevices/casestudy/" data-idevice-type="casestudy" data-idevice-component-type="json" data-idevice-json-data="{&quot;id&quot;:&quot;idevice-muqpno4w-b3j6g2u01&quot;,&quot;typeGame&quot;:&quot;Case study&quot;,&quot;history&quot;:&quot;&lt;p&gt;Resuelve la siguiente inecuación&lt;/p&gt;&quot;,&quot;textInfoDurationInput&quot;:&quot;&quot;,&quot;textInfoDurationTextInput&quot;:&quot;&quot;,&quot;textInfoParticipantsInput&quot;:&quot;&quot;,&quot;textInfoParticipantsTextInput&quot;:&quot;&quot;,&quot;activities&quot;:[{&quot;activity&quot;:&quot;&lt;p&gt;\\[&lt;br /&gt;2(4x-3) - \\dfrac{3x-1}{5} \\leq 4(x-1) + \\dfrac{3x}{2}&lt;br /&gt;\\]&lt;/p&gt;&quot;,&quot;feedback&quot;:&quot;&lt;p&gt;&lt;strong&gt;Paso 1: Eliminar Paréntesis&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;Aplicando la propiedad distributiva:&lt;/p&gt;\n&lt;p&gt;\\[ 8x - 6 - \\frac{3x-1}{5} \\leq 4x - 4 + \\frac{3x}{2} \\]&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;Paso 2: Eliminar Denominadores&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;(\\(mcm = 10\\)) Multiplicamos toda la inecuación por \\(10\\):&lt;/p&gt;\n&lt;p&gt;\\[ 10(8x - 6) - 10\\left(\\frac{3x-1}{5}\\right) \\leq 10(4x - 4) + 10\\left(\\frac{3x}{2}\\right) \\]&lt;/p&gt;\n&lt;p&gt;Simplificando:&lt;/p&gt;\n&lt;p&gt;\\[ 80x - 60 - 2(3x-1) \\leq 40x - 40 + 5(3x) \\]&lt;/p&gt;\n&lt;p&gt;Expandiendo el signo negativo:&lt;/p&gt;\n&lt;p&gt;\\[ 80x - 60 - 6x + 2 \\leq 40x - 40 + 15x \\]&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;Paso 3: Agrupar Términos Semejantes&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;Agrupando términos con \\(x\\) y constantes:&lt;/p&gt;\n&lt;p&gt;\\[ 74x - 58 \\leq 55x - 40 \\]&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;Paso 4: Aislar la Variable&lt;/strong&gt; \\(x\\)&lt;/p&gt;\n&lt;p&gt;Trasladamos términos con \\(x\\) a la izquierda y constantes a la derecha:&lt;/p&gt;\n&lt;p&gt;\\[ 74x - 55x \\leq -40 + 58 \\] \\[ 19x \\leq 18 \\]&lt;/p&gt;\n&lt;p&gt;✅ &lt;strong&gt;Solución Final&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;Dividimos por \\(19\\): \\[ \\color{red}{\\boxed{x \\leq \\dfrac{18}{19}}} \\]&lt;/p&gt;\n&lt;p&gt;Notación de Intervalo: \\[\\color{blue}{\\boxed{\\left(-\\infty, \\dfrac{18}{19}\\right]}} \\]&lt;/p&gt;\n&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;\n&lt;table style=\&quot;border-width: 0px;\&quot; border=\&quot;0\&quot; align=\&quot;center\&quot;&gt;\n&lt;tbody&gt;\n&lt;tr&gt;\n&lt;td style=\&quot;border: 1px solid #ffffff; background-color: #ffffff;\&quot;&gt;&lt;img src=\&quot;../content/resources/2012-09-09_1734.png\&quot; style=\&quot;width: 352px; height: 100px;\&quot; width=\&quot;352\&quot; height=\&quot;100\&quot; /&gt;&lt;/td&gt;\n&lt;/tr&gt;\n&lt;/tbody&gt;\n&lt;/table&gt;&quot;,&quot;buttonCaption&quot;:&quot;Mostrar retroalimentación&quot;}]}" data-idevice-template="casestudy.html">
+<div class="exe-casestudy-container">
+  
+        <div class="caseStudyContent">            
+            <div class="CSP-Info mb-3">
+                
+            <dl>
+                <div class="inline"><dt><span title=""></span></dt><dd></dd></div>
+                <div class="inline"><dt><span title=""></span></dt><dd></dd></div>
+            </dl>
+            </div>
+            <div class="CSP-History mb-3" >
+                <p>Resuelve la siguiente inecuación</p>
+            </div>
+            <div class="CSP-Activities mb-3">
+                
+                <div class="CSP-ActivityDiv ">
+                    <div class="CSP-Activity mb-3">
+                        <p>\[<br />2(4x-3) - \dfrac{3x-1}{5} \leq 4(x-1) + \dfrac{3x}{2}<br />\]</p>
+                    </div>
+                    
+                    <div class="iDevice_buttons feedback-button js-required">
+                        <input type="button" class="CSP-FeedbackBtn feedbacktooglebutton" value="Mostrar retroalimentación">
+                    </div>
+                    <div class="CSP-FeedbackText feedback js-feedback js-hidden" style="display: none;">
+                        <p><strong>Paso 1: Eliminar Paréntesis</strong></p>
+<p>Aplicando la propiedad distributiva:</p>
+<p>\[ 8x - 6 - \frac{3x-1}{5} \leq 4x - 4 + \frac{3x}{2} \]</p>
+<p><strong>Paso 2: Eliminar Denominadores</strong></p>
+<p>(\(mcm = 10\)) Multiplicamos toda la inecuación por \(10\):</p>
+<p>\[ 10(8x - 6) - 10\left(\frac{3x-1}{5}\right) \leq 10(4x - 4) + 10\left(\frac{3x}{2}\right) \]</p>
+<p>Simplificando:</p>
+<p>\[ 80x - 60 - 2(3x-1) \leq 40x - 40 + 5(3x) \]</p>
+<p>Expandiendo el signo negativo:</p>
+<p>\[ 80x - 60 - 6x + 2 \leq 40x - 40 + 15x \]</p>
+<p><strong>Paso 3: Agrupar Términos Semejantes</strong></p>
+<p>Agrupando términos con \(x\) y constantes:</p>
+<p>\[ 74x - 58 \leq 55x - 40 \]</p>
+<p><strong>Paso 4: Aislar la Variable</strong> \(x\)</p>
+<p>Trasladamos términos con \(x\) a la izquierda y constantes a la derecha:</p>
+<p>\[ 74x - 55x \leq -40 + 58 \] \[ 19x \leq 18 \]</p>
+<p>✅ <strong>Solución Final</strong></p>
+<p>Dividimos por \(19\): \[ \color{red}{\boxed{x \leq \dfrac{18}{19}}} \]</p>
+<p>Notación de Intervalo: \[\color{blue}{\boxed{\left(-\infty, \dfrac{18}{19}\right]}} \]</p>
+<p><br /><br /></p>
+<table style="border-width: 0px;" border="0" align="center">
+<tbody>
+<tr>
+<td style="border: 1px solid #ffffff; background-color: #ffffff;"><img src="../content/resources/2012-09-09_1734.png" style="width: 352px; height: 100px;" width="352" height="100" /></td>
+</tr>
+</tbody>
+</table>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+    
+</div>
+
+</div>
+</div>
+</article><article id="block-murblxm0-9cf20qpt3" class="box caja-azul">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/iconogeogebra.png" alt="" style="display:block;object-fit:contain;">
+</div>
+<h1 class="box-title">Ejercicios.</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-1790967166055-1jw07li6x" class="idevice_node geogebra-activity" data-idevice-path="../idevices/geogebra-activity/" data-idevice-type="geogebra-activity">
+<div class="auto-geogebra auto-geogebra-yqrxhrmx auto-geogebra-width-800 auto-geogebra-height-500 showSuggestionButtons0 ShowTitle0 ShowAuthor0 auto-geogebra-scale-100 auto-geogebra-evaluation-id-0 auto-geogebra-ideviceid-idevice-1790967166055-1jw07li6x auto-geogebra-weight-100"><div class="auto-geogebra-instructions"><p>Resuelve las siguientes inecuaciones lineales.</p>
+<p><em>Cada respuesta correcta suma 2 puntos y resta 1 punto si es incorrecta.</em></p></div><div class="game-evaluation-ids js-hidden" data-id="idevice-1790967166055-1jw07li6x" data-evaluationb="false" data-evaluationid="0"></div><p><a href="https://www.geogebra.org/m/yqrxhrmx" target="_blank">https://www.geogebra.org/m/yqrxhrmx (Ventana nueva)</a></p><div class="auto-geogebra-author js-hidden">Luis%20Mart%EDnez,https%3A//www.geogebra.org/m/yqrxhrmx,Copia%20de%20Inecuaciones%20lineales%20%28autoevaluable%29,0,Autor%EDa,0,T%EDtulo</div><div class="auto-geogebra-messages-evaluation">Actividad%20no%20completada,Actividad%20superada.%20Puntuaci%F3n%3A%20%25s,Actividad%20no%20superada.%20Puntuaci%F3n%3A%20%25s,Guardar%20la%20puntuaci%F3n</div><div class="auto-geogebra-messages-scorm">La%20puntuaci%F3n%20no%20se%20puede%20guardar%20porque%20esta%20p%E1gina%20no%20forma%20parte%20de%20un%20paquete%20SCORM,Su%20puntuaci%F3n,Puntuaci%F3n,Peso,La%20%FAltima%20puntuaci%F3n%20guardada%20es</div></div>
+</div>
+</div>
+</article>
+</div></main><div class="nav-buttons">
+<a href="../html/2-inecuaciones-con-una-incognita.html" title="Anterior" class="nav-button nav-button-left"><span>Anterior</span></a>
+<a href="../html/22-cuadraticas-o-de-segundo-grado.html" title="Siguiente" class="nav-button nav-button-right"><span>Siguiente</span></a>
+</div>
+<footer id="siteFooter"><div id="siteFooterContent"> <div id="packageLicense" class="cc cc-by-nc-sa"> <p> <span class="license-label">Licencia: </span><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="license">Creative Commons: Reconocimiento - no comercial - compartir igual 4.0</a></p>
+</div>
+</div></footer>
+</div>
+
+</body>
+</html>
