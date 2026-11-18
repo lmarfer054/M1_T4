@@ -418,3 +418,123 @@ body.exe-web-site .exe-content .ODNP-GameOverExt a:hover {
     color: #5c1f5d !important;
     border-color: #5c1f5d !important;
 }
+/* =========================================
+   PROTECCIÓN DE CASILLAS DE TEXTO (Rellenar huecos)
+   Evita que el hover de boton-(color) afecte a los inputs de escritura
+   ========================================= */
+body.exe-web-site .exe-content [class*="boton-"] input[type="text"]:hover,
+body.exe-web-site .exe-content [class*="boton-"] input[type="text"]:focus {
+    background: #ffffff !important;
+    border: 1px solid #cccccc !important;
+    color: #333333 !important;
+    transform: none !important;
+    cursor: text !important;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.1) !important;
+}
+/* =========================================
+   PARCHE GEOGEBRA (Blindaje de especificidad máxima)
+   ========================================= */
+
+body.exe-web-site .exe-content div[class*="geogebra" i] button:not(.box-toggle):not(.toggler),
+body.exe-web-site .exe-content .applet_container button:not(.box-toggle):not(.toggler) {
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    color: inherit !important;
+    padding: 4px !important;
+    outline: none !important;
+}
+
+body.exe-web-site .exe-content div[class*="geogebra" i] button:not(.box-toggle):not(.toggler):hover,
+body.exe-web-site .exe-content .applet_container button:not(.box-toggle):not(.toggler):hover {
+    background: rgba(0,0,0,0.1) !important;
+    background-color: rgba(0,0,0,0.1) !important;
+    background-image: none !important;
+    border-color: transparent !important;
+    transform: none !important;
+}
+/* =========================================
+   PARCHE GEOGEBRA (Anulación de botones adyacentes)
+   ========================================= */
+body.exe-web-site .exe-content div[class*="geogebra" i] button:not(.box-toggle):not(.toggler) + button:not(.box-toggle):not(.toggler),
+body.exe-single-page .exe-content div[class*="geogebra" i] button:not(.box-toggle):not(.toggler) + button:not(.box-toggle):not(.toggler),
+body.exe-web-site .exe-content .applet_container button:not(.box-toggle):not(.toggler) + button:not(.box-toggle):not(.toggler),
+body.exe-single-page .exe-content .applet_container button:not(.box-toggle):not(.toggler) + button:not(.box-toggle):not(.toggler) {
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    color: inherit !important;
+    padding: 4px !important;
+    outline: none !important;
+}
+
+body.exe-web-site .exe-content div[class*="geogebra" i] button:not(.box-toggle):not(.toggler) + button:not(.box-toggle):not(.toggler):hover,
+body.exe-single-page .exe-content div[class*="geogebra" i] button:not(.box-toggle):not(.toggler) + button:not(.box-toggle):not(.toggler):hover,
+body.exe-web-site .exe-content .applet_container button:not(.box-toggle):not(.toggler) + button:not(.box-toggle):not(.toggler):hover,
+body.exe-single-page .exe-content .applet_container button:not(.box-toggle):not(.toggler) + button:not(.box-toggle):not(.toggler):hover {
+    background: rgba(0,0,0,0.1) !important;
+    background-color: rgba(0,0,0,0.1) !important;
+    background-image: none !important;
+    border-color: transparent !important;
+    transform: none !important;
+}
+/* =========================================
+   SOPA DE LETRAS (Clases exactas SPP-PuzzleSquare)
+   ========================================= */
+
+/* 1. Estado base: Letras limpias en negro y fondo transparente */
+body.exe-web-site .exe-content button.SPP-PuzzleSquare:not(.box-toggle):not(.toggler),
+body.exe-web-site .exe-content button.SPP-PuzzleSquare:not(.box-toggle):not(.toggler) + button.SPP-PuzzleSquare:not(.box-toggle):not(.toggler),
+body.exe-single-page .exe-content button.SPP-PuzzleSquare:not(.box-toggle):not(.toggler),
+body.exe-single-page .exe-content button.SPP-PuzzleSquare:not(.box-toggle):not(.toggler) + button.SPP-PuzzleSquare:not(.box-toggle):not(.toggler) {
+    background: transparent !important;
+    background-color: transparent !important;
+    color: #111111 !important;
+    border: none !important;
+    border-radius: 4px !important;
+    box-shadow: none !important;
+    text-transform: uppercase !important;
+    font-weight: 500 !important;
+    padding: 0 !important;
+    margin: 1px !important;
+    transform: none !important;
+}
+
+/* 2. Efecto al pasar el ratón o ARRASTRAR seleccionando letras (Incluye + button para vencer la regla global) */
+body.exe-web-site .exe-content button.SPP-PuzzleSquare:not(.box-toggle):not(.toggler):hover,
+body.exe-web-site .exe-content button.SPP-PuzzleSquare:not(.box-toggle):not(.toggler) + button.SPP-PuzzleSquare:not(.box-toggle):not(.toggler):hover,
+body.exe-single-page .exe-content button.SPP-PuzzleSquare:not(.box-toggle):not(.toggler):hover,
+body.exe-single-page .exe-content button.SPP-PuzzleSquare:not(.box-toggle):not(.toggler) + button.SPP-PuzzleSquare:not(.box-toggle):not(.toggler):hover,
+body.exe-web-site .exe-content button.SPP-PuzzleSquare:not([class="SPP-PuzzleSquare"]):not(.found):not(.box-toggle):not(.toggler),
+body.exe-web-site .exe-content button.SPP-PuzzleSquare:not(.box-toggle):not(.toggler) + button.SPP-PuzzleSquare:not([class="SPP-PuzzleSquare"]):not(.found):not(.box-toggle):not(.toggler),
+body.exe-single-page .exe-content button.SPP-PuzzleSquare:not([class="SPP-PuzzleSquare"]):not(.found):not(.box-toggle):not(.toggler),
+body.exe-single-page .exe-content button.SPP-PuzzleSquare:not(.box-toggle):not(.toggler) + button.SPP-PuzzleSquare:not([class="SPP-PuzzleSquare"]):not(.found):not(.box-toggle):not(.toggler) {
+    background: #cfe2ff !important;
+    background-color: #cfe2ff !important;
+    color: #004494 !important;
+    font-weight: 700 !important;
+    transform: none !important;
+}
+
+/* 3. Palabras acertadas (clase .found) */
+body.exe-web-site .exe-content button.SPP-PuzzleSquare.found:not(.box-toggle):not(.toggler),
+body.exe-web-site .exe-content button.SPP-PuzzleSquare:not(.box-toggle):not(.toggler) + button.SPP-PuzzleSquare.found:not(.box-toggle):not(.toggler),
+body.exe-single-page .exe-content button.SPP-PuzzleSquare.found:not(.box-toggle):not(.toggler),
+body.exe-single-page .exe-content button.SPP-PuzzleSquare:not(.box-toggle):not(.toggler) + button.SPP-PuzzleSquare.found:not(.box-toggle):not(.toggler) {
+    background: #d4edda !important;
+    background-color: #d4edda !important;
+    color: #155724 !important;
+    font-weight: 700 !important;
+}
+
+/* 4. Botón "FINALIZAR" debajo de la sopa */
+body.exe-web-site .exe-content div[class*="SPP-" i] button:not(.SPP-PuzzleSquare),
+body.exe-single-page .exe-content div[class*="SPP-" i] button:not(.SPP-PuzzleSquare) {
+    padding: 8px 20px !important;
+    border-radius: 6px !important;
+    cursor: pointer !important;
+}
